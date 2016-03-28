@@ -18,12 +18,12 @@ $(function(){
     
     $("#C").on("click", function(){
             DEG = 'c';
-            locationSuccess;
+            navigator.geolocation.getCurrentPosition(locationSuccess, locationError);
         });
 
     $("#F").on("click", function(){
             DEG = 'f';
-            locationSuccess;
+            navigator.geolocation.getCurrentPosition(locationSuccess, locationError);
         });
 
     // Get user's location, and use OpenWeatherMap

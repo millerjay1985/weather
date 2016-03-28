@@ -156,6 +156,16 @@ $(function(){
         scroller.animate({left:(-i*100)+'%'}, function(){
             currentSlide = i;
         });
+        
+        function displayWeather(condition){
+            var div = $(".temp");
+            
+            //first empty the div
+            div.empty();
+            //appends data to the div with the message class
+            console.log(color);
+            div.append("<blockquote><span
+        }
     }
 
     /* Error handling functions */

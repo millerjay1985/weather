@@ -6,11 +6,11 @@ $(function(){
     
     $("#C").on("click", function(){
             DEG = 'c';
-        };
+        });
 
     $("#F").on("click", function(){
             DEG = 'f';
-        };
+        });
 
     var weatherDiv = $('#weather'),
         scroller = $('#scroller'),

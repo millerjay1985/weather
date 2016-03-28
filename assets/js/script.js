@@ -51,6 +51,8 @@ $(function(){
 
                     // Get the local time of this forecast (the api returns it in utc)
                     var localTime = new Date(this.dt*1000 - offset);
+                    
+                    displayWeather(this.main.temp);
 
                     addWeather(
                         this.weather[0].icon,
@@ -162,9 +164,9 @@ $(function(){
             
             //first empty the div
             div.empty();
-            //appends data to the div with the message class
+            //appends data to the div with the temp class
             console.log(color);
-            div.append("<blockquote><span
+            div.append(condition);
         }
     }
 

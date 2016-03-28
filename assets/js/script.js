@@ -180,9 +180,9 @@ $(function(){
     function degreeFormat(){
         $("#C").on("click", function(){
             return 'c';
-        };
+        }
         $("#F").on("click", function(){
             return 'f';
-        };
+        }
     }
 });

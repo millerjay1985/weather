@@ -27,6 +27,8 @@ $(function(){
             var cache = localStorage.weatherCache && JSON.parse(localStorage.weatherCache);
 
             var d = new Date();
+            
+            console.log(d);
 
             // If the cache is newer than 30 minutes, use the cache
             if(cache && cache.timestamp && cache.timestamp > d.getTime() - 30*60*1000){

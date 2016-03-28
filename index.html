@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Weather Forecast App Revisited | Tutorialzine Demo</title>
+
+        <!-- The stylesheet -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Playball|Open+Sans+Condensed:300,700" />
+
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Weather Forecast</h1>
+        </header>
+
+        <div id="weather">
+
+            <ul id="scroller">
+                <!-- The forecast items will go here -->
+            </ul>
+
+            <a href="#" class="arrow previous">Previous</a>
+            <a href="#" class="arrow next">Next</a>
+
+        </div>
+
+        <p class="location"></p>
+
+        <div id="clouds"></div>
+
+        <!-- JavaScript includes - jQuery, moment.js and our own script.js -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+        <script src="assets/js/script.js"></script>
+
+    </body>
+</html>

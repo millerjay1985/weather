@@ -18,12 +18,12 @@ $(function(){
     
     $("#C").on("click", function(){
             DEG = 'c';
-            locationSuccess();
+            locationSuccess;
         });
 
     $("#F").on("click", function(){
             DEG = 'f';
-            locationSuccess();
+            locationSuccess;
         });
 
     // Get user's location, and use OpenWeatherMap

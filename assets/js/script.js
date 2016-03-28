@@ -2,7 +2,7 @@ $(function(){
 
     /* Configuration */
 
-    var DEG = 'c';  // c for celsius, f for fahrenheit
+    var DEG = degreeFormat();  // c for celsius, f for fahrenheit
 
     var weatherDiv = $('#weather'),
         scroller = $('#scroller'),
@@ -177,4 +177,12 @@ $(function(){
         weatherDiv.addClass('error').html(msg);
     }
 
+    function degreeFormat(){
+        $("#C").on("click", function(){
+            return 'c';
+        };
+        $("#F").on("click", function(){
+            return 'f';
+        };
+    }
 });

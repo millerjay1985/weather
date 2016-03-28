@@ -19,12 +19,12 @@ $(function(){
     $("#C").on("click", function(){
             DEG = 'c';
             locationSuccess();
-        };
+        });
 
     $("#F").on("click", function(){
             DEG = 'f';
             locationSuccess();
-        };
+        });
 
     // Get user's location, and use OpenWeatherMap
     // to get the location name and weather forecast

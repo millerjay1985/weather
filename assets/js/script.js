@@ -3,14 +3,6 @@ $(function(){
     /* Configuration */
 
     var DEG = 'f';  // c for celsius, f for fahrenheit
-    
-    $("#C").on("click", function(){
-            DEG = 'c';
-        });
-
-    $("#F").on("click", function(){
-            DEG = 'f';
-        });
 
     var weatherDiv = $('#weather'),
         scroller = $('#scroller'),
@@ -23,6 +15,16 @@ $(function(){
     else{
         showError("Your browser does not support Geolocation!");
     }
+    
+    $("#C").on("click", function(){
+            DEG = 'c';
+            locationSuccess();
+        };
+
+    $("#F").on("click", function(){
+            DEG = 'f';
+            locationSuccess();
+        };
 
     // Get user's location, and use OpenWeatherMap
     // to get the location name and weather forecast

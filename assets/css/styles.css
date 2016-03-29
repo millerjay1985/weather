@@ -17,7 +17,7 @@ html, body{
   margin: 0 auto;
 }
 
-.myDisplay{
+.tempDisplay{
     display: inline-block;
     margin: 0 auto;
     font-size: 80px;

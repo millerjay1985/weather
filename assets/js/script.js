@@ -7,8 +7,6 @@ $(function(){
     var weatherDiv = $('#weather'),
         scroller = $('#scroller'),
         location = $('p.location'),
-        temp = $('p.temp'),
-        type = $('a.symbol'),
         x = 0,
         symbols = ['C','F'];
 
@@ -57,9 +55,8 @@ $(function(){
                 });
                 */
                 
-                temp.html(convertTemperature(cache.data.main.temp));
-                type.html('°' + symbols[x])
-                $("#changeTemp").on("click", function(){});
+                addWeather();
+                $("#symbol").on("click", function(conv){addWeather()});
 
                 // Add the location to the page
                 console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
@@ -100,6 +97,11 @@ $(function(){
             showError("We can't find information about your city!");
             window.console && console.error(e);
         }
+    }
+    
+    function addWeather(){
+        document.getElementById("temp").innerHTML = convertTemperature(cache.data.main.temp) + '°';
+        document.getElementById("symbol").innerHTML = symbols[x];
     }
 
     /*

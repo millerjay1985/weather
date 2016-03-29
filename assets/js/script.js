@@ -59,10 +59,12 @@ $(function(){
                 console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
                 location.html(city+', <b>'+country+'</b>');
 
+                /*
                 weatherDiv.addClass('loaded');
 
                 // Set the slider to the first slide
                 showSlide(0);
+                */
 
             }
 
@@ -94,6 +96,7 @@ $(function(){
         }
     }
 
+    /*
     function addWeather(icon, day, condition){
 
         var markup = '<li>'+
@@ -103,9 +106,11 @@ $(function(){
 
         scroller.append(markup);
     }
+    */
 
     /* Handling the previous / next arrows */
 
+    /*
     var currentSlide = 0;
     weatherDiv.find('a.previous').click(function(e){
         e.preventDefault();
@@ -150,6 +155,7 @@ $(function(){
             currentSlide = i;
         });
     }
+    */
 
     /* Error handling functions */
 

@@ -54,13 +54,11 @@ $(function(){
 
                 });
                 */
-                
-               // addWeather();
-                $("#symbol").on("click", function(conv){addWeather()});
 
                 // Add the location to the page
                 console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
                 location.html(city+', <b>'+country+'</b>');
+                $("#symbol").on("click", function(conv){addWeather()});
 
                 /*
                 weatherDiv.addClass('loaded');

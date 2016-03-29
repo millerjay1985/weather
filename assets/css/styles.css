@@ -25,6 +25,10 @@ html, body{
     background-color: #aaa;
 }
 
+.tempDisplay p{
+  margin: 0 auto !important;
+}
+
 .weatherDisplay{
   font-size: 35px;
   margin: 0 auto;

@@ -3,6 +3,10 @@ body{
   text-align:center;
 }
 
-a, p {
+a {
+  margin-left: 50%;
+}
+
+p{
   margin-left: 50%;
 }

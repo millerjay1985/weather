@@ -21,24 +21,28 @@
 
     <body>
 
-        <header>
-            <h1>Weather Forecast</h1>
-        </header>
-
-        <div id="weather">
+        <span class = bkStyle>
             
-            <p class="location"></p>
-            
-            <!-- temperature will be displayed here -->
-            <div class="myDisplay">
-                <p id="temp"></p>
+            <header>
+                <h1>Weather Forecast</h1>
+            </header>
+    
+            <div id="weather">
+                
+                <p class="location"></p>
+                
+                <!-- temperature will be displayed here -->
+                <div class="myDisplay">
+                    <p id="temp"></p>
+                </div>
+                <div class="myDisplay">
+                    <a href='#' id='symbol'></a>
+                </div>
+                
             </div>
-            <div class="myDisplay">
-                <a href='#' id='symbol'></a>
-            </div>
             
-        </div>
-
+        </span>
+        
         <!-- JavaScript includes - jQuery, moment.js and our own script.js -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>

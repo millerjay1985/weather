@@ -53,7 +53,7 @@ $(function(){
                 });
                 */
                 
-                scroller.append(<li>this.main.temp);
+                scroller.append(<li>this.weather[0].main</li>);
 
                 // Add the location to the page
                 location.html(city+', <b>'+country+'</b>');

@@ -2,7 +2,7 @@ $(function(){
 
     /* Configuration */
 
-    var DEG = 'f';  // c for celsius, f for fahrenheit
+    var DEG = 'c';  // c for celsius, f for fahrenheit
 
     var weatherDiv = $('#weather'),
         scroller = $('#scroller'),
@@ -15,19 +15,7 @@ $(function(){
     else{
         showError("Your browser does not support Geolocation!");
     }
-    
-    /*
-    $("#C").on("click", function(){
-            DEG = 'c';
-            console.log("c was selected");
-        });
 
-    $("#F").on("click", function(){
-            DEG = 'f';
-            console.log("d was selected")
-        });
-    */
-        
     // Get user's location, and use OpenWeatherMap
     // to get the location name and weather forecast
 
@@ -47,26 +35,21 @@ $(function(){
                 var offset = d.getTimezoneOffset()*60*1000;
                 var city = cache.data.city.name;
                 var country = cache.data.city.country;
-                
-                //displayWeather(this.main.temp);
 
                 $.each(cache.data.list, function(){
                     // "this" holds a forecast object
 
                     // Get the local time of this forecast (the api returns it in utc)
                     var localTime = new Date(this.dt*1000 - offset);
-                    
-                    displayWeather(this.main.temp);
 
-                    
                     addWeather(
                         this.weather[0].icon,
                         moment(localTime).calendar(),   // We are using the moment.js library to format the date
                         this.weather[0].main + ' <b>' + convertTemperature(this.main.temp_min) + '°' + DEG +
                                                 ' / ' + convertTemperature(this.main.temp_max) + '°' + DEG+'</b>'
                     );
+
                 });
-                
 
                 // Add the location to the page
                 location.html(city+', <b>'+country+'</b>');
@@ -81,12 +64,9 @@ $(function(){
             else{
 
                 // If the cache is old or nonexistent, issue a new AJAX request
-                
-              
-                var weatherAPI = 'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+
+
+                var weatherAPI = 'http://api.openweathermap.org/data/2.5/forecast?lat='+position.coords.latitude+
                                     '&lon='+position.coords.longitude+'&callback=?&appid=d764b67a93d8cc2654e70be7d6800994';
-                                    
-                
 
                 $.getJSON(weatherAPI, function(response){
 
@@ -95,8 +75,6 @@ $(function(){
                         timestamp:(new Date()).getTime(),   // getTime() returns milliseconds
                         data: response
                     });
-                    
-                    //conosole.log(localStorage.weatherCache.data.main.temp)
 
                     // Call the function again
                     locationSuccess(position);
@@ -165,16 +143,6 @@ $(function(){
         scroller.animate({left:(-i*100)+'%'}, function(){
             currentSlide = i;
         });
-        
-        function displayWeather(condition){
-            var div = $(".temp");
-            
-            //first empty the div
-            div.empty();
-            //appends data to the div with the temp class
-            console.log(color);
-            div.append(condition);
-        }
     }
 
     /* Error handling functions */

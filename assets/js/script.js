@@ -8,7 +8,9 @@ $(function(){
         scroller = $('#scroller'),
         location = $('p.location'),
         temp = $('.temp'),
-        x = 0;
+        type = $('a.symbol'),
+        x = 0,
+        symbols = ['C','F'];
 
     // Does this browser support geolocation?
     if (navigator.geolocation) {
@@ -55,8 +57,9 @@ $(function(){
                 });
                 */
                 
-                temp.append(convertTemperature(cache.data.main.temp));
-                $("#changeTemp").on("click", function(){temp.append(convertTemperature(cache.data.main.temp));});
+                temp.html(convertTemperature(cache.data.main.temp));
+                type.html('°' + symbols[x])
+                $("#changeTemp").on("click", function(){});
 
                 // Add the location to the page
                 console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
@@ -183,9 +186,7 @@ $(function(){
     function convertTemperature(kelvin){
         // Convert the temperature to either Celsius or Fahrenheit:
         x = 1 - x;
-        var temp = Math.round(x == '0' ? (kelvin - 273.15) : (kelvin*9/5 - 459.67));
-        var symbol = (x == '0' ? ' °C' : '°F');
-        return temp + '<a href="#" id="changeTemp" target="blank>' + symbol + '</a>';
+        return Math.round(x == '0' ? (kelvin - 273.15) : (kelvin*9/5 - 459.67));
     }
 
     function showError(msg){

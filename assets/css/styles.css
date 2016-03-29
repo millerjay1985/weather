@@ -26,7 +26,7 @@ html, body{
 }
 
 .tempDisplay p{
-  margin: 0 auto !important;
+  margin: 0 auto;
 }
 
 .weatherDisplay{

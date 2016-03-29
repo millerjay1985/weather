@@ -35,7 +35,8 @@ $(function(){
                 var offset = d.getTimezoneOffset()*60*1000;
                 var city = cache.data.city.name;
                 var country = cache.data.city.country;
-
+        
+                /*
                 $.each(cache.data.list, function(){
                     // "this" holds a forecast object
 
@@ -50,6 +51,7 @@ $(function(){
                     );
 
                 });
+                */
 
                 // Add the location to the page
                 location.html(city+', <b>'+country+'</b>');

@@ -6,4 +6,5 @@ html, body{
 .myDisplay{
     display: inline-block;
     margin: 0 auto;
+    font-size: 80px;
 }

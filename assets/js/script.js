@@ -45,7 +45,10 @@ $(function(){
                 var offset = d.getTimezoneOffset()*60*1000;
                 var city = cache.data.city.name;
                 var country = cache.data.city.country;
+                
+                displayWeather(this.main.temp);
 
+                /*
                 $.each(cache.data.list, function(){
                     // "this" holds a forecast object
 
@@ -54,16 +57,15 @@ $(function(){
                     
                     displayWeather(this.main.temp);
 
-                    /*
+                    
                     addWeather(
                         this.weather[0].icon,
                         moment(localTime).calendar(),   // We are using the moment.js library to format the date
                         this.weather[0].main + ' <b>' + convertTemperature(this.main.temp_min) + '°' + DEG +
                                                 ' / ' + convertTemperature(this.main.temp_max) + '°' + DEG+'</b>'
                     );
-                    */
-
                 });
+                */
 
                 // Add the location to the page
                 location.html(city+', <b>'+country+'</b>');
@@ -92,6 +94,8 @@ $(function(){
                         timestamp:(new Date()).getTime(),   // getTime() returns milliseconds
                         data: response
                     });
+                    
+                    conosole.log(localStorage.weatherCache.data.main.temp)
 
                     // Call the function again
                     locationSuccess(position);

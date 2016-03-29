@@ -3,6 +3,10 @@ html, body{
   text-align:center;
 }
 
+p{
+  margin: 0 auto !important;
+}
+
 .head{
   font-size: 80px;
 }

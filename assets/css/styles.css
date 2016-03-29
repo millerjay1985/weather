@@ -20,10 +20,10 @@ html, body{
 .tempDisplay{
     display: inline-block;
     margin: 0 auto;
-    font-size: 80px;
+    font-size: 50px;
 }
 
 .weatherDisplay{
   font-size: 35px;
-  margin: 15px auto;
+  margin: 0 auto;
 }

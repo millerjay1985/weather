@@ -3,10 +3,9 @@ body{
   text-align:center;
 }
 
-a {
-  margin-left: 50%;
-}
-
-p{
-  margin-left: 50%;
+.myDisplay{
+  position:relative;
+  text-align:center;
+  width:10%;
+  margin-left: 45%;
 }

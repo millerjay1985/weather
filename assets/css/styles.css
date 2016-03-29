@@ -3,6 +3,10 @@ html, body{
   text-align:center;
 }
 
+.bkStykle h1{
+  font-size: 70px;
+}
+
 .location{
   font-size: 35px;
   margin: 0 auto;

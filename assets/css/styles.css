@@ -22,3 +22,8 @@ html, body{
     margin: 0 auto;
     font-size: 80px;
 }
+
+.weatherDisplay{
+  font-size: 35px;
+  margin: 15px auto;
+}

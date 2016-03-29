@@ -7,6 +7,7 @@ html, body{
 #weather{
   position: relative;
   margin-top: 15%;
+  background-color: #000;
 }
 
 .head{
@@ -22,7 +23,6 @@ html, body{
     display: inline-block;
     margin: 0 auto;
     font-size: 50px;
-    background-color: #aaa;
 }
 
 .tempDisplay p{

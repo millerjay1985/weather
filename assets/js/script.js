@@ -180,10 +180,7 @@ $(function(){
 
     function convertTemperature(kelvin, format){
         // Convert the temperature to either Celsius or Fahrenheit:
-        
-        if(format == 'c'){
         return Math.round(format == 'c' ? (kelvin - 273.15) : (kelvin*9/5 - 459.67));
-        }
     }
 
     function showError(msg){

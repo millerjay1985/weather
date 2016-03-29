@@ -36,11 +36,16 @@ $(function(){
                 var city = cache.data.name;
                 var country = cache.data.sys.country;
 
-                // Add the location to the page
-                addWeather(cache.data.main.temp);
-                console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
+                // Add location to page
                 location.html(city+', <b>'+country+'</b>');
+                console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
+                
+                // Add temp to page
+                addWeather(cache.data.main.temp);
                 $("#symbol").on("click", function(){addWeather(cache.data.main.temp)});
+                
+                // Add condition to page
+                document.getElementById("condition").innerHTML = cache.data.weather.main;
 
             }
 

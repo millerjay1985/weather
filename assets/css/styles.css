@@ -3,6 +3,11 @@ html, body{
   text-align:center;
 }
 
+#weather{
+  position: relative;
+  margin-top: 15%;
+}
+
 .head{
   font-size: 60px;
 }

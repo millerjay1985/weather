@@ -58,7 +58,7 @@ $(function(){
                 // Add the location to the page
                 console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
                 location.html(city+', <b>'+country+'</b>');
-                $("#symbol").on("click", function(conv){addWeather(condition)});
+                $("#symbol").on("click", function(){addWeather(cache.data.main.temp)});
 
                 /*
                 weatherDiv.addClass('loaded');

@@ -52,6 +52,12 @@ $(function(){
 
                 });
                 */
+                
+                var div = $(".temp");
+                  //first empty the div
+                  div.empty();
+                  //appends data to the div with the message class
+                  div.append(this.main.temp);
 
                 // Add the location to the page
                 location.html(city+', <b>'+country+'</b>');

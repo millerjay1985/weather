@@ -56,6 +56,7 @@ $(function(){
                 //scroller.append('<li>' + this.weather[0].main + '</li>');
 
                 // Add the location to the page
+                console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
                 location.html(city+', <b>'+country+'</b>');
 
                 weatherDiv.addClass('loaded');

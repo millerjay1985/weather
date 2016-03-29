@@ -7,8 +7,8 @@ $(function(){
     var weatherDiv = $('#weather'),
         scroller = $('#scroller'),
         location = $('p.location'),
-        temp = $('p.temp'),
-        type = $('a.symbol'),
+        temp = $('div.p.temp'),
+        type = $('div.a.symbol'),
         x = 0,
         symbols = ['C','F'];
 

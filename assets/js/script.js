@@ -16,6 +16,7 @@ $(function(){
         showError("Your browser does not support Geolocation!");
     }
     
+    /*
     $("#C").on("click", function(){
             DEG = 'c';
             console.log("c was selected");
@@ -25,7 +26,8 @@ $(function(){
             DEG = 'f';
             console.log("d was selected")
         });
-
+    */
+        
     // Get user's location, and use OpenWeatherMap
     // to get the location name and weather forecast
 
@@ -94,7 +96,7 @@ $(function(){
                         data: response
                     });
                     
-                    conosole.log(localStorage.weatherCache.data.main.temp)
+                    //conosole.log(localStorage.weatherCache.data.main.temp)
 
                     // Call the function again
                     locationSuccess(position);

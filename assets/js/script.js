@@ -45,7 +45,7 @@ $(function(){
                 $("#symbol").on("click", function(){addWeather(cache.data.main.temp)});
                 
                 // Add condition to page
-                document.getElementById("condition").innerHTML = cache.data.weather.main;
+                document.getElementById("condition").innerHTML = cache.data.weather[0].main;
 
             }
 

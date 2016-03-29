@@ -58,7 +58,7 @@ $(function(){
                 // Add the location to the page
                 console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
                 location.html(city+', <b>'+country+'</b>');
-                $("#symbol").on("click", function(conv){addWeather()});
+                $("#symbol").on("click", function(conv){addWeather(condition)});
 
                 /*
                 weatherDiv.addClass('loaded');
@@ -97,8 +97,8 @@ $(function(){
         }
     }
     
-    function addWeather(){
-        document.getElementById("temp").innerHTML = convertTemperature(cache.data.main.temp) + '°';
+    function addWeather(condition){
+        document.getElementById("temp").innerHTML = convertTemperature(condition) + '°';
         document.getElementById("symbol").innerHTML = symbols[x];
         x = 1 - x;
     }

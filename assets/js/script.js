@@ -46,7 +46,7 @@ $(function(){
                 var city = cache.data.city.name;
                 var country = cache.data.city.country;
                 
-                displayWeather(this.main.temp);
+                //displayWeather(this.main.temp);
 
                 /*
                 $.each(cache.data.list, function(){

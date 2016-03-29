@@ -6,7 +6,8 @@ $(function(){
 
     var weatherDiv = $('#weather'),
         scroller = $('#scroller'),
-        location = $('p.location');
+        location = $('p.location'),
+        temp = $('.temp');
 
     // Does this browser support geolocation?
     if (navigator.geolocation) {
@@ -53,7 +54,7 @@ $(function(){
                 });
                 */
                 
-                $('.temp').append(cache.data.main.temp);
+                temp.append(convertTemperature(cache.data.main.temp,c) + '° + C');
 
                 // Add the location to the page
                 console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
@@ -177,9 +178,12 @@ $(function(){
 
     }
 
-    function convertTemperature(kelvin){
+    function convertTemperature(kelvin, format){
         // Convert the temperature to either Celsius or Fahrenheit:
-        return Math.round(DEG == 'c' ? (kelvin - 273.15) : (kelvin*9/5 - 459.67));
+        
+        if(format == 'c'){
+        return Math.round(format == 'c' ? (kelvin - 273.15) : (kelvin*9/5 - 459.67));
+        }
     }
 
     function showError(msg){

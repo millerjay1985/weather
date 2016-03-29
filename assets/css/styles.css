@@ -3,6 +3,14 @@ html, body{
   text-align:center;
 }
 
+h1{
+  font-size: 90px;
+}
+
+p{
+  font-size: 60px;
+}
+
 .myDisplay{
     display: inline-block;
     margin: 0 auto;

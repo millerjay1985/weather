@@ -55,7 +55,7 @@ $(function(){
                 });
                 */
                 
-                temp.append(convertTemperature(cache.data.main.temp);
+                temp.append(convertTemperature(cache.data.main.temp));
 
                 // Add the location to the page
                 console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);

@@ -53,7 +53,7 @@ $(function(){
                 });
                 */
                 
-                //scroller.append('<li>' + this.weather[0].main + '</li>');
+                $('.temp').append(cache.data.main.temp);
 
                 // Add the location to the page
                 console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);

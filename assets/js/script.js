@@ -56,6 +56,7 @@ $(function(){
                 */
                 
                 temp.append(convertTemperature(cache.data.main.temp));
+                $("#changeTemp").on("click", function(){temp.append(convertTemperature(cache.data.main.temp));});
 
                 // Add the location to the page
                 console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
@@ -184,7 +185,7 @@ $(function(){
         x = 1 - x;
         var temp = Math.round(x == '0' ? (kelvin - 273.15) : (kelvin*9/5 - 459.67));
         var symbol = (x == '0' ? ' °C' : '°F');
-        return temp + symbol;
+        return temp + '<a href="#" id="changeTemp" target="blank>' + symbol + '</a>';
     }
 
     function showError(msg){

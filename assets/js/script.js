@@ -55,7 +55,7 @@ $(function(){
                 });
                 */
                 
-                addWeather();
+               // addWeather();
                 $("#symbol").on("click", function(conv){addWeather()});
 
                 // Add the location to the page

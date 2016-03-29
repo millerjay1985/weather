@@ -48,7 +48,6 @@ $(function(){
                 
                 //displayWeather(this.main.temp);
 
-                /*
                 $.each(cache.data.list, function(){
                     // "this" holds a forecast object
 
@@ -65,7 +64,7 @@ $(function(){
                                                 ' / ' + convertTemperature(this.main.temp_max) + '°' + DEG+'</b>'
                     );
                 });
-                */
+                
 
                 // Add the location to the page
                 location.html(city+', <b>'+country+'</b>');

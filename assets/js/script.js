@@ -54,12 +54,14 @@ $(function(){
                     
                     displayWeather(this.main.temp);
 
+                    /*
                     addWeather(
                         this.weather[0].icon,
                         moment(localTime).calendar(),   // We are using the moment.js library to format the date
                         this.weather[0].main + ' <b>' + convertTemperature(this.main.temp_min) + '°' + DEG +
                                                 ' / ' + convertTemperature(this.main.temp_max) + '°' + DEG+'</b>'
                     );
+                    */
 
                 });
 

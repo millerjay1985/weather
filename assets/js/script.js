@@ -33,8 +33,8 @@ $(function(){
 
                 // Get the offset from UTC (turn the offset minutes into ms)
                 var offset = d.getTimezoneOffset()*60*1000;
-                var city = cache.data.city.name;
-                var country = cache.data.city.country;
+                var city = cache.data.sys.name;
+                var country = cache.data.sys.country;
         
                 /*
                 $.each(cache.data.list, function(){

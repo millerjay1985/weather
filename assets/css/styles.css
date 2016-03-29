@@ -4,7 +4,6 @@ body{
 }
 
 .myDisplay{
-  position:relative;
-  text-align:center;
-  margin-left: 50%;
+    display: inline-block;
+    margin: 0 auto;
 }

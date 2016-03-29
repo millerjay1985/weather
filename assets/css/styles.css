@@ -2,3 +2,7 @@ body{
   background-color: #3399FF;
   text-align:center;
 }
+
+a, p {
+  margin-left: 50%;
+}

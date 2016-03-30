@@ -37,7 +37,7 @@ $(function(){
                 var country = cache.data.sys.country;
 
                 // Add location to page
-                //location.html(city+', <b>'+country+'</b>');
+                location.html(city+', <b>'+country+'</b>');
                 //console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
                 
                 // Add temp to page
@@ -92,8 +92,6 @@ $(function(){
             else{
 
                 // If the cache is old or nonexistent, issue a new AJAX request
-                
-                console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
 
                 var weatherAPI = 'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&callback=?&appid=d764b67a93d8cc2654e70be7d6800994';
 

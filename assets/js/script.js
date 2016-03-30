@@ -38,7 +38,7 @@ $(function(){
 
                 // Add location to page
                 location.html(city+', <b>'+country+'</b>');
-                console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
+                //console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
                 
                 // Add temp to page
                 addWeather(cache.data.main.temp);

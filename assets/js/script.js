@@ -56,7 +56,7 @@ $(function(){
                         case "clear sky":    
                             document.getElementById("iconBox").innerHTML = data.sun_shower;
                             break;
-                        case :"few clouds"
+                        case "few clouds":
                             document.getElementById("iconBox").innerHTML = data.cloudy;
                             break;
                         default:

@@ -52,7 +52,7 @@ $(function(){
         
                     var icon = cache.data.weather[0].description;
                     
-                    var clearSky = document.createElement("img");
+                    var clearSky = new Image();
                     clearSky.src = "http://openweathermap.org/img/w/01d.png";
                     
                     var div = document.getElementById("iconBox");

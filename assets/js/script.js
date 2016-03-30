@@ -52,9 +52,12 @@ $(function(){
         
                     var icon = cache.data.weather[0].description;
                     
+                    var clearSky = document.createElement("img");
+                    clearSky.src = "http://openweathermap.org/img/w/01d.png";
+                    
                     switch(icon){
                         case "clear sky":    
-                            document.getElementById("iconBox").innerHTML = data.sunny;
+                            document.getElementById("iconBox").innerHTML = clearSky;
                             break;
                         case "few clouds":
                             document.getElementById("iconBox").innerHTML = data.cloudy;

@@ -59,7 +59,7 @@ $(function(){
                     
                     switch(icon){
                         case "clear sky":    
-                            div.append(clearSky);
+                            div.appendChild(clearSky);
                             break;
                         case "few clouds":
                             document.getElementById("iconBox").innerHTML = data.cloudy;

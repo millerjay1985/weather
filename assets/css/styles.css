@@ -100,7 +100,7 @@ html, body{
   margin: -1.25em;
   background: currentColor;
   border-radius: 50%;
-  box-shadow: 0 0 0 0.375em #fff;
+  box-shadow: 0 0 0 0.375em #CCFF99;
   animation: spin 12s infinite linear;
 }
 .rays {

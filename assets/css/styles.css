@@ -35,6 +35,10 @@ html, body{
   margin: 0 auto;
 }
 
+#iconBox{
+  color:#aaa;
+}
+
 .icon {
   position: relative;
   display: inline-block;

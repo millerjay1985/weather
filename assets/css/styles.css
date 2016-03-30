@@ -2,6 +2,7 @@ html, body{
   background-color: #0066CC;
   text-align:center;
   line-height: 50%;
+  font-family: 'Indie Flower', cursive;
 }
 
 #weather{

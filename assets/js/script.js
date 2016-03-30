@@ -82,6 +82,19 @@ $(function(){
         document.getElementById("symbol").innerHTML = symbols[x];
         x = 1 - x;
     }
+    
+    function ajax_test(callback){  
+   $.ajax({
+      //this is the url to my json.js file
+      url: "http://millerjay1985.github.io/gh-pages-test/json_data.json.js",
+      dataType: "jsonp",
+      //this is the name of the function in my .json.js file
+      jsonpCallback: "myFunction",
+      success: function(data) {  
+        callback(data);
+     }
+   });  
+}  
 
     /* Error handling functions */
 

@@ -37,7 +37,7 @@ $(function(){
                 var country = cache.data.sys.country;
 
                 // Add location to page
-                location.html(city+', <b>'+country+'</b>');
+                //location.html(city+', <b>'+country+'</b>');
                 //console.log('lat=' + position.coords.latitude + '&lon=' + position.coords.longitude);
                 
                 // Add temp to page

@@ -55,9 +55,11 @@ $(function(){
                     var clearSky = document.createElement("img");
                     clearSky.src = "http://openweathermap.org/img/w/01d.png";
                     
+                    var div = document.getElementById("iconBox");
+                    
                     switch(icon){
                         case "clear sky":    
-                            document.getElementById("iconBox").innerHTML = clearSky;
+                            div.append(clearSky);
                             break;
                         case "few clouds":
                             document.getElementById("iconBox").innerHTML = data.cloudy;

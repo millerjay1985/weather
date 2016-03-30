@@ -46,6 +46,23 @@ $(function(){
                 
                 // Add condition to page
                 document.getElementById("condition").innerHTML = cache.data.weather[0].main;
+                
+                //adds icon image
+                ajax_test(function(){
+        
+                    var icon = cache.data.weather[0].description;
+                    
+                    switch(icon){
+                        case "clear sky":    
+                            document.getElementById("iconBox").innerHTML = data.sun_shower;
+                            break;
+                        case :"few clouds"
+                            document.getElementById("iconBox").innerHTML = data.cloudy;
+                            break;
+                        default:
+                            console.log(icon);
+                    }
+                });
 
             }
 
@@ -94,11 +111,7 @@ $(function(){
             callback(data);
          }
        });  
-}
-
-function addIcon(icon, ajax_test(function(array){
-    document.getElementById("iconBox").innerHTML = ;
-}))
+    }
 
     /* Error handling functions */
 

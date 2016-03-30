@@ -52,20 +52,17 @@ $(function(){
         
                     var icon = cache.data.weather[0].description;
                     
-                    var clearSky = new Image();
-                    clearSky.src = "http://openweathermap.org/img/w/01d.png";
-                    
                     var div = document.getElementById("iconBox");
                     
                     switch(icon){
                         case "clear sky":    
-                            div.appendChild(clearSky);
+                            div.innerHTML = data.sunny;
                             break;
                         case "few clouds":
-                            document.getElementById("iconBox").innerHTML = data.cloudy;
+                            div.innerHTML = data.cloudy;
                             break;
                         case "rain":
-                            document.getElementById("iconBox").innerHTML = data.sun_showers;
+                            div.innerHTML = data.sun_showers;
                         default:
                             console.log(icon);
                     }

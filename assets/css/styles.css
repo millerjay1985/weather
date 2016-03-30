@@ -2,7 +2,6 @@ html, body{
   background-color: #0066CC;
   text-align:center;
   line-height: 50%;
-  font-family: 'Indie Flower', cursive;
 }
 
 #weather{
@@ -10,6 +9,7 @@ html, body{
   margin-top: 15%;
   background-color: #0066CC;
   color: #fff;
+  font-family: 'Indie Flower', cursive;
 }
 
 .head{

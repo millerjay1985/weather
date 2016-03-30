@@ -52,17 +52,36 @@ $(function(){
         
                     var icon = cache.data.weather[0].description;
                     
-                    var div = document.getElementById("iconBox");
+                    var div = document.getElementById("iconBox").innerHTML;
                     
                     switch(icon){
                         case "clear sky":    
-                            document.getElementById("iconBox").innerHTML = data.sunny;
+                            div = data.sunny;
                             break;
                         case "few clouds":
-                            div.innerHTML = data.cloudy;
+                            div = data.cloudy;
                             break;
                         case "rain":
-                            div.innerHTML = data.sun_showers;
+                            div = data.sun_showers;
+                            break;
+                        case "scattered clouds":
+                            div = data.cloudy;
+                            break;
+                        case "broken clouds":
+                            div = data.cloudy;
+                            break;
+                        case "shower rain":
+                            div = data.rainy;
+                            break;
+                        case "thunderstorm":
+                            div = data.thunder;
+                            break;
+                        case "snow":
+                            div = data.flurries;
+                            break;
+                        case "mist":
+                            div = data.cloudy;
+                            break;
                         default:
                             console.log(icon);
                     }

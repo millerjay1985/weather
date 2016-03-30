@@ -83,7 +83,7 @@ $(function(){
                             div.innerHTML = data.cloudy;
                             break;
                         default:
-                            console.log(icon);
+                    
                     }
                 });
 

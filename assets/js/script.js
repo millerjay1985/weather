@@ -59,28 +59,28 @@ $(function(){
                             div.innerHTML = data.sunny;
                             break;
                         case "few clouds":
-                            div = data.cloudy;
+                            div.innerHTML = data.cloudy;
                             break;
                         case "rain":
-                            div = data.sun_showers;
+                            div.innerHTML = data.sun_showers;
                             break;
                         case "scattered clouds":
-                            div = data.cloudy;
+                            div.innerHTML = data.cloudy;
                             break;
                         case "broken clouds":
-                            div = data.cloudy;
+                            div.innerHTML = data.cloudy;
                             break;
                         case "shower rain":
-                            div = data.rainy;
+                            div.innerHTML = data.rainy;
                             break;
                         case "thunderstorm":
-                            div = data.thunder;
+                            div.innerHTML = data.thunder;
                             break;
                         case "snow":
-                            div = data.flurries;
+                            div.innerHTML = data.flurries;
                             break;
                         case "mist":
-                            div = data.cloudy;
+                            div.innerHTML = data.cloudy;
                             break;
                         default:
                             console.log(icon);

@@ -54,11 +54,13 @@ $(function(){
                     
                     switch(icon){
                         case "clear sky":    
-                            document.getElementById("iconBox").innerHTML = data.sun_shower;
+                            document.getElementById("iconBox").innerHTML = data.sunny;
                             break;
                         case "few clouds":
                             document.getElementById("iconBox").innerHTML = data.cloudy;
                             break;
+                        case "rain":
+                            document.getElementById("iconBox").innerHTML = data.sun_showers;
                         default:
                             console.log(icon);
                     }

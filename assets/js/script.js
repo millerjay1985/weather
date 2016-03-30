@@ -48,7 +48,7 @@ $(function(){
                 document.getElementById("condition").innerHTML = cache.data.weather[0].main;
                 
                 //adds icon image
-                ajax_test(function(){
+                ajax_test(function(data){
         
                     var icon = cache.data.weather[0].description;
                     

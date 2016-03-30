@@ -52,11 +52,11 @@ $(function(){
         
                     var icon = cache.data.weather[0].description;
                     
-                    var div = document.getElementById("iconBox").innerHTML;
+                    var div = document.getElementById("iconBox");
                     
                     switch(icon){
                         case "clear sky":    
-                            div = data.sunny;
+                            div.innerHTML = data.sunny;
                             break;
                         case "few clouds":
                             div = data.cloudy;

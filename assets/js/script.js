@@ -56,7 +56,7 @@ $(function(){
                     
                     switch(icon){
                         case "clear sky":    
-                            div.innerHTML = data.sunny;
+                            document.getElementById("iconBox").innerHTML = data.sunny;
                             break;
                         case "few clouds":
                             div.innerHTML = data.cloudy;
